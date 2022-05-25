@@ -1,4 +1,3 @@
-@extends('layout/estilos')
 <?php
 
    session_start();
@@ -10,6 +9,8 @@
 
 <!DOCTYPE html>
 <html>
+    @extends('layout/estilos')
+    <link rel="stylesheet" href="assets/css/style.css">
    <body id="home" class="light">
       @extends('layout/header')
       <section class="home-section" id="home">
@@ -190,7 +191,7 @@
          </div>
       </section>
       </section>
-      
+
       <section class="newsletter" id="newsletter">
          <div class="container">
             <h2 class="title-decor">Suscribete a nuestro <span>Boletín</span></h2>

@@ -6,5 +6,4 @@
       <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
       <link rel="stylesheet" href="assets/fontawesome/css/all.css">
       <link rel="stylesheet" href="assets/fontawesome5/css/all.css">
-      <link rel="stylesheet" href="assets/css/style.css">
    </head>
