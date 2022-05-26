@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BoletinController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/store', [BoletinController::class, 'store'])->name('boletin.store');
+Route::get('/boletinsub', [BoletinController::class, 'store'])->name('boletin.store');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
+Route::post('/contactstore', [ContactController::class, 'store'])->name('contact.store');

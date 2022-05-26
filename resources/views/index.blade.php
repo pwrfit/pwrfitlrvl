@@ -9,7 +9,15 @@
 
 <!DOCTYPE html>
 <html>
-    @extends('layout/estilos')
+    <head>
+      <meta charset="UTF-8">
+      <title>PWR FIT</title>
+      <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+      <link rel="stylesheet" href="assets/css/slick.min.css">
+      <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+      <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+      <link rel="stylesheet" href="assets/fontawesome5/css/all.css">
+   </head>
     <link rel="stylesheet" href="assets/css/style.css">
    <body id="home" class="light">
       @extends('layout/header')
@@ -103,6 +111,7 @@
          <p class="slogan">Tenemos los mejores precios en el mercado, solo elige el plan que desees y haz parte de esta familia</p>
          <div class="container">
             <div class="row">
+               <a href="register">
                <div class="col-lg-4">
                   <div class="pricing-table basic-plan" style="background-image: url(assets/img/bg-price-1.svg">
                      <div class="pricing-plan-title">
@@ -131,7 +140,9 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-4">
+               </a>
+               <a href="register">
+                  <div class="col-lg-4">
                   <div class="pricing-table king-plan" style="background-image: url(assets/img/bg-price-2.svg">
                      <div class="pricing-plan-title">
                         <div class="pricing-table-icon">
@@ -159,7 +170,9 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-4">
+               </a>
+               <a href="register">
+                  <div class="col-lg-4">
                   <div class="pricing-table amateur-plan" style="background-image: url(assets/img/bg-price-3.svg">
                      <div class="pricing-plan-title">
                         <div class="pricing-table-amateur-icon">
@@ -187,6 +200,7 @@
                      </div>
                   </div>
                </div>
+               </a>
             </div>
          </div>
       </section>
@@ -196,7 +210,7 @@
          <div class="container">
             <h2 class="title-decor">Suscribete a nuestro <span>Boletín</span></h2>
             <p class="slogan">¡Suscríbete a nuestro boletín y recibe correos con promociones y ofertas para tí!</p>
-            <form class="subscribe-form" action="{{ route('boletin.store')}}" method="post">
+            <form class="subscribe-form" action="{{ route('boletin.store')}}" method="get">
                @csrf
                <input class="inp-form" type="email" name="email" placeholder="Tu E-mail" required>
                <button type="submit" class="btn" style="height:50px">Suscribirse</button>
