@@ -43,6 +43,31 @@ INSERT INTO `comentarios` VALUES (1,1,'comentario'),(2,1,'comentario 2'),(3,1,'c
 UNLOCK TABLES;
 
 --
+-- Table structure for table `contacto`
+--
+
+DROP TABLE IF EXISTS `contacto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `contacto` (
+  `Nombre` varchar(45) NOT NULL,
+  `Correo` varchar(45) NOT NULL,
+  `Asunto` varchar(45) NOT NULL,
+  `Mensaje` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `contacto`
+--
+
+LOCK TABLES `contacto` WRITE;
+/*!40000 ALTER TABLE `contacto` DISABLE KEYS */;
+INSERT INTO `contacto` VALUES ('Wall','juan@gmail.com','Prueba','Prueba'),('Daniela casita','granda.goez@gmail.com','Prueba2','Prueba2');
+/*!40000 ALTER TABLE `contacto` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `horario`
 --
 
@@ -114,7 +139,7 @@ CREATE TABLE `membresia` (
 
 LOCK TABLES `membresia` WRITE;
 /*!40000 ALTER TABLE `membresia` DISABLE KEYS */;
-INSERT INTO `membresia` VALUES (1,'Hombre de negocios',460000),(2,'Millonario',40000),(3,'Aficionado',5000),(4,'Miembro',0);
+INSERT INTO `membresia` VALUES (1,'Usuario Comprometido',460000),(2,'Usuario Casual',40000),(3,'Usuario Aficionado',5000),(4,'Miembro',0);
 /*!40000 ALTER TABLE `membresia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -185,6 +210,7 @@ CREATE TABLE `usuarios` (
   `Correo` varchar(40) NOT NULL,
   `Boletin` varchar(2) NOT NULL,
   `Membresia` int(11) NOT NULL,
+  `Verificado` varchar(2) NOT NULL,
   PRIMARY KEY (`IdUsuario`),
   KEY `Membresia` (`Membresia`),
   KEY `Rol` (`Rol`),
@@ -199,7 +225,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1000001,1,'Juan','Holguin',NULL,NULL,NULL,'25d55ad283aa400af464c76d713c07ad','jpholguin77@misena.edu.co','NO',4),(1000002,2,'Julian','Ospino',NULL,NULL,NULL,'25d55ad283aa400af464c76d713c07ad','jaospino481@misena.edu.co','NO',4),(1000003,3,'Juan Andres','Gomez Cataño','CR 56 CL 94-12','5431232','3215631180','81dc9bdb52d04dc20036dbd8313ed055','juang12@gmail.com','SI',3);
+INSERT INTO `usuarios` VALUES (1234,3,'Juan','Holguin',NULL,NULL,NULL,'81dc9bdb52d04dc20036dbd8313ed055','juan@gmail.com','SI',1,'NO'),(1000001,1,'Juan','Holguin',NULL,NULL,NULL,'25d55ad283aa400af464c76d713c07ad','jpholguin77@misena.edu.co','NO',4,''),(1000002,2,'Julian','Ospino',NULL,NULL,NULL,'25d55ad283aa400af464c76d713c07ad','jaospino481@misena.edu.co','NO',4,''),(1000003,3,'Juan Andres','Gomez Cataño','CR 56 CL 94-12','5431232','3215631180','81dc9bdb52d04dc20036dbd8313ed055','juang12@gmail.com','SI',3,'');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -292,4 +318,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-25 12:01:21
+-- Dump completed on 2022-05-27 11:12:29

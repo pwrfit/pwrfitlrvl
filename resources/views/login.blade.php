@@ -23,6 +23,9 @@
                <div class="col-lg-5 col-md-8">
                   <div class="card login-page bg-white shadow rounded border-0">
                      <div class="card-body">
+                        @if ($mensaje = Session::get('success'))
+                              <div class='alert alert-info text-center'>{{$mensaje}}</div>
+                        @endif
                         <h4 class="card-title text-center">Inicio de Sesión</h4>
                         <form class="login-form mt-4" method="post">
                            <div class="row">
@@ -61,7 +64,7 @@
                               <div class="col-12 text-center">
                                  <p class="mb-0 mt-3">
                                     <small class="me-2">¿No tienes una cuenta?</small>
-                                    <a href="register" class="fw-bold" style="color: #000">Regístrate</a>
+                                    <a href="{{route('auth.register')}}" class="fw-bold" style="color: #000">Regístrate</a>
                                  </p>
                               </div>
                            </div>

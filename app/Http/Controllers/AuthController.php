@@ -25,7 +25,18 @@ class AuthController extends Controller
 
     public function store(Request $request)
     {
-        //
+        $user = new Auth();
+        $user->IdUsuario = $request->post('documento');
+        $user->Rol = '3';
+        $user->Nombres = $request->post('nombres');
+        $user->Apellidos = $request->post('apellidos');
+        $user->Correo = $request->post('correo');
+        $user->Contrasenna = md5($request->post('contrasenna'));
+        $user->Boletin = $request->post('boletin');
+        $user->Membresia = '1';
+        $user->Verificado = 'NO';
+        $user->save();
+        return redirect()->route("auth.login")->with("success","Usuario creado con éxito!");
     }
 
     public function show(Auth $auth)

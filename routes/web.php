@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BoletinController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,5 @@ Route::post('/contactstore', [ContactController::class, 'store'])->name('contact
 Route::post('/boletinstore', [BoletinController::class, 'store'])->name('boletin.store');
 Route::get('/login', [AuthController::class, 'indexlogin'])->name('auth.login');
 Route::get('/register', [AuthController::class, 'indexregister'])->name('auth.register');
+Route::post('/register/registered', [AuthController::class, 'store'])->name('auth.store');
+Route::get('/mail', [MailController::class, 'sendEmail']);

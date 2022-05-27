@@ -11,7 +11,7 @@
                   <li><a href="/#home" class="sub-menu-item">Inicio</a></li>
                   <li><a href="/#services" class="sub-menu-item">Servicios</a></li>
                   <li><a href="/#prices" class="sub-menu-item">Precios</a></li>
-                  <li><a href="contact" class="sub-menu-item">Contacto</a></li>
+                  <li><a href="{{route('contact.index')}}" class="sub-menu-item">Contacto</a></li>
                </ul>
                <div class="buy-menu-btn d-none">
                   <a href="/#prices" class="btn btn-primary">Únete</a>
