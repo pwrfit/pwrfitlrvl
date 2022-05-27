@@ -121,7 +121,7 @@
                         </div>
                         <div class="pricing-plan-cost">
                            <span class="payment-currency">$</span>
-                           <span class="plan-price">20.900</span><br>
+                           <span class="plan-price" style="color: #F23849;">20.900</span><br>
                            <span class="plan-type">/ Mes</span>
                         </div>
                      </div>
@@ -151,7 +151,7 @@
                         </div>
                         <div class="pricing-plan-cost">
                            <span class="payment-currency">$</span>
-                           <span class="plan-price">199.900</span><br>
+                           <span class="plan-price" style="color: #fbb300;">199.900</span><br>
                            <span class="plan-type">/ Año</span>
                         </div>
                      </div>
@@ -181,7 +181,7 @@
                         </div>
                         <div class="pricing-plan-cost">
                            <span class="payment-currency">$</span>
-                           <span class="plan-price">5.900</span><br>
+                           <span class="plan-price" style="color: #2f55d4;">5.900</span><br>
                            <span class="plan-type">/ Mes</span>
                         </div>
                      </div>
@@ -204,18 +204,6 @@
             </div>
          </div>
       </section>
-      </section>
-
-      <section class="newsletter" id="newsletter">
-         <div class="container">
-            <h2 class="title-decor">Suscribete a nuestro <span>Boletín</span></h2>
-            <p class="slogan">¡Suscríbete a nuestro boletín y recibe correos con promociones y ofertas para tí!</p>
-            <form class="subscribe-form" action="{{ route('boletin.store')}}" method="get">
-               @csrf
-               <input class="inp-form" type="email" name="email" placeholder="Tu E-mail" required>
-               <button type="submit" class="btn" style="height:50px">Suscribirse</button>
-            </form>
-         </div>
       </section>
       <footer style="background-image: url(assets/img/bg-1-min.pngs)">
          <div class="container">

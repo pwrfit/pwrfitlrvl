@@ -24,7 +24,7 @@
                         <h4 class="card-title">¿Tienes alguna queja, reclamo o sugerencia? ¡Contáctanos!</h4>
                         <div class="custom-form mt-3">
                            @if ($mensaje = Session::get('success'))
-                              <div class='alert alert-success'>$mensaje</div>
+                              <div class='alert alert-success'>{{$mensaje}}</div>
                            @endif
                            <form method="post" action="{{ route('contact.store')}}">
                               @csrf

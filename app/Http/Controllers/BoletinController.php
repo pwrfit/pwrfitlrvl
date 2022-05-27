@@ -19,7 +19,7 @@ class BoletinController extends Controller
 
     public function store(Request $request)
     {
-        return "Se tiene que guardar el correo" ;
+        //
     }
 
     public function show(Boletin $boletin)
