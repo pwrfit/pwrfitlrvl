@@ -11,11 +11,11 @@ class TestMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $details;
+    public $detalles;
 
-    public function __construct($details)
+    public function __construct($detalles)
     {
-        $this->details = $details;
+        $this->detalles = $detalles;
     }
 
     public function build()

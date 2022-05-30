@@ -141,7 +141,7 @@
             <table class="spacer float-center" style="Margin:0 auto;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:100%">
                <tbody>
                   <tr style=padding:0;text-align:left;vertical-align:top>
-                     <td height=15px style=-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#322F37;font-family:Helvetica,Arial,sans-serif;font-size:10px;font-weight:400;hyphens:auto;line-height:10px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word> 
+                     <td height=15px style=-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#322F37;font-family:Helvetica,Arial,sans-serif;font-size:10px;font-weight:400;hyphens:auto;line-height:10px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word>
             </table>
             <table align=center class="container float-center" style="Margin:0 auto;background:#fff;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding:10px;text-align:center;vertical-align:top;width:580px;margin-left:10px!important;margin-right:10px!important;">
    <tbody>
@@ -161,7 +161,7 @@
             <table class=spacer style=border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%>
                <tbody>
                   <tr style=padding:0;text-align:left;vertical-align:top>
-                     <td height=15px style=-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#322F37;font-family:Helvetica,Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:15px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word> 
+                     <td height=15px style=-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#322F37;font-family:Helvetica,Arial,sans-serif;font-size:15px;font-weight:400;hyphens:auto;line-height:15px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word>
             </table>
             <table class=row style=border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%>
                <tbody>
@@ -171,7 +171,7 @@
                            <tbody>
                               <tr style=padding:0;text-align:left;vertical-align:top>
                                  <th style=Margin:0;color:#322F37;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:500;line-height:1.3;margin:0;padding:0;text-align:left>
-                                    <h6 class="text-center mb-0 title" style=Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:500;line-height:1.3;margin:0;margin-bottom:0;padding:0;padding-bottom:0;text-align:center;word-wrap:normal;color:#F23849>Hola, julianmontoya29:</h6>
+                                    <h6 class="text-center mb-0 title" style=Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:500;line-height:1.3;margin:0;margin-bottom:0;padding:0;padding-bottom:0;text-align:center;word-wrap:normal;color:#F23849>Hola, {{ $detalles['nombre'] }}:</h6>
                                  <th class=expander style=Margin:0;color:#322F37;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0>
                         </table>
             </table>
@@ -191,12 +191,12 @@
                                     <th style=Margin:0;color:#322F37;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:300;line-height:1.3;margin:0;mso-hide:all;padding:0;text-align:left>
                                        <p class="mb-0 text-center sz-14" style="Margin:0;Margin-bottom:10px;font-family:Helvetica,Arial,Verdana,'Trebuchet MS';font-size:14px;font-weight:300;line-height:24px;margin:0;margin-bottom:0;mso-hide:all;padding:0;padding-bottom:10px;text-align:center">Ingresa el siguiente código de verificación:
                                        <div class="text-center mb-0" style="Margin:0;Margin-bottom:10px;color:#322F37;font-family:Helvetica,Arial,Verdana,'Trebuchet MS';font-size:24px;font-weight:400;line-height:24px;margin:0;margin-bottom:0;mso-hide:all;padding:0;padding-bottom:0;text-align:center;padding-top:5px">
-                                          <p style="background:#E5E5E5;border:1px solid;border-style:solid;border-color:#DAD8DE;display:inline;padding-bottom:5px;padding-left:5px;padding-right:5px;padding-top:5px">578412
+                                          <p style="background:#E5E5E5;border:1px solid;border-style:solid;border-color:#DAD8DE;display:inline;padding-bottom:5px;padding-left:5px;padding-right:5px;padding-top:5px">{{ $detalles['codigo'] }}
                                        </div>
                                        <table class=spacer style=border-collapse:collapse;border-spacing:0;mso-hide:all;padding:0;text-align:left;vertical-align:top;width:100%>
                                           <tbody style=mso-hide:all>
                                              <tr style=mso-hide:all;padding:0;text-align:left;vertical-align:top>
-                                                <td height=10px style=-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#322F37;font-family:Helvetica,Arial,sans-serif;font-size:10px;font-weight:400;hyphens:auto;line-height:10px;margin:0;mso-hide:all;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word> 
+                                                <td height=10px style=-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#322F37;font-family:Helvetica,Arial,sans-serif;font-size:10px;font-weight:400;hyphens:auto;line-height:10px;margin:0;mso-hide:all;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word>
                                        </table>
                            </table>
                         </table>

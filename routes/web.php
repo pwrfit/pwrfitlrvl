@@ -31,4 +31,5 @@ Route::get('/register/casual', [AuthController::class, 'indexregister'])->name('
 Route::get('/register/comprometido', [AuthController::class, 'indexregister'])->name('register.comprometido');
 Route::get('/register/aficionado', [AuthController::class, 'indexregister'])->name('register.aficionado');
 Route::post('/register/registered', [AuthController::class, 'store'])->name('auth.store');
-Route::get('/mail', [MailController::class, 'sendEmail']);
+Route::get('/register/verify', [AuthController::class, 'verify'])->name('auth.verify');
+Route::post('/register/verify/code', [AuthController::class, 'verifycode'])->name('auth.verifycode');
