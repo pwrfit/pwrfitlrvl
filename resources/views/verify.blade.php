@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap-grid.css')}}">
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('fontawesome/css/all.css')}}">
     <link rel="stylesheet" href="{{ asset('css/verify.css')}}" />
 
     <title>Verifica tu cuenta | PWRFIT</title>
   </head>
   <body>
+    <div class="back-to-home rounded d-none d-sm-block">
+        <a href="/" class="btn btn-icon btn-primary" style="height: 35px;"><i class="fa-regular fa-house"></i></a>
+     </div>
     <div class="container">
       <h2>Verifica tu cuenta</h2>
       <p>

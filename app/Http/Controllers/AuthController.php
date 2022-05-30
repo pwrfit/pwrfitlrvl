@@ -18,6 +18,7 @@ class AuthController extends Controller
     public function indexregister()
     {
         return view('register');
+
     }
 
     public function indexredirect()
@@ -51,7 +52,8 @@ class AuthController extends Controller
         $user->Correo = $request->post('correo');
         $user->Contrasenna = md5($request->post('contrasenna'));
         $user->Boletin = $request->post('boletin');
-        $user->Membresia = '1';
+        $user->Membresia = $request->post('membresia');
+        $user->Pago = "Sin completar";
         $codigo = random_int(100000, 999999);
         $user->Verificacion = $codigo;
         $user->save();

@@ -30,6 +30,13 @@
                            <div class="row">
                               <div class="col-md-6">
                                  <div class="mb-3">
+                                    @if (Request::path() == 'register/comprometido')
+                                        <input type="hidden" name="membresia" value="1">
+                                    @elseif (Request::path() == 'register/casual')
+                                        <input type="hidden" name="membresia" value="2">
+                                    @elseif (Request::path() == 'register/aficionado')
+                                        <input type="hidden" name="membresia" value="3">
+                                    @endif
                                     <label class="form-label">Nombres <span class="text-danger">*</span></label>
                                     <div class="form-icon position-relative">
                                        <i class="fa-regular input fa-user"></i>
