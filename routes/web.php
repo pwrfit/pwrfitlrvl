@@ -26,6 +26,9 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact.index
 Route::post('/contactstore', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/boletinstore', [BoletinController::class, 'store'])->name('boletin.store');
 Route::get('/login', [AuthController::class, 'indexlogin'])->name('auth.login');
-Route::get('/register', [AuthController::class, 'indexregister'])->name('auth.register');
+Route::get('/register', [AuthController::class, 'indexredirect'])->name('auth.redirect');
+Route::get('/register/casual', [AuthController::class, 'indexregister'])->name('register.casual');
+Route::get('/register/comprometido', [AuthController::class, 'indexregister'])->name('register.comprometido');
+Route::get('/register/aficionado', [AuthController::class, 'indexregister'])->name('register.aficionado');
 Route::post('/register/registered', [AuthController::class, 'store'])->name('auth.store');
 Route::get('/mail', [MailController::class, 'sendEmail']);

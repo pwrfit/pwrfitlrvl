@@ -4,14 +4,14 @@
       <meta charset="utf-8">
       <link rel="shortcut icon" href="{{asset('favicon.ico')}}">
       <title>Registro</title>
-      <link rel="stylesheet" href="assets/css/slick.min.css">
-      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.css">
-      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="{{asset('css/slick.min.css')}}">
+      <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap-grid.css')}}">
+      <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css')}}">
+      <link rel="stylesheet" href="{{asset('fontawesome/css/all.css')}}">
+      <link rel="stylesheet" href="{{asset('css/style.css')}}">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-      <script src="assets/jquery/dist/jquery.slim.min.js"></script>
-      <script src="assets/@popperjs/core/dist/umd/popper.min.js"></script>
+      <script src="{{asset('jquery/dist/jquery.slim.min.js')}}"></script>
+      <script src="{{asset('@popperjs/core/dist/umd/popper.min.js')}}"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
    </head>
    <body class="body-auth">

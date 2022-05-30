@@ -111,7 +111,7 @@
          <p class="slogan">Tenemos los mejores precios en el mercado, solo elige el plan que desees y haz parte de esta familia</p>
          <div class="container">
             <div class="row">
-               <a href="register">
+               <a href="{{ route('register.casual')}}">
                <div class="col-lg-4">
                   <div class="pricing-table basic-plan" style="background-image: url(assets/img/bg-price-1.svg">
                      <div class="pricing-plan-title">
@@ -135,13 +135,13 @@
                      </div>
                      <div class="pricing-table-foot">
                         <div class="plan-select">
-                           <a href="register" class="filled-btn bg-burning-red">Únete <i class="fa-duotone fa-arrow-right"></i></a>
+                           <a href="{{ route('register.casual')}}" class="filled-btn bg-burning-red">Únete <i class="fa-duotone fa-arrow-right"></i></a>
                         </div>
                      </div>
                   </div>
                </div>
                </a>
-               <a href="register">
+               <a href="{{ route('register.comprometido')}}">
                   <div class="col-lg-4">
                   <div class="pricing-table king-plan" style="background-image: url(assets/img/bg-price-2.svg">
                      <div class="pricing-plan-title">
@@ -165,13 +165,13 @@
                      </div>
                      <div class="pricing-table-foot">
                         <div class="plan-select">
-                           <a href="register" class="filled-btn bg-gold-gradient">Únete <i class="fa-duotone fa-arrow-right"></i></i></a>
+                           <a href="{{ route('register.comprometido')}}" class="filled-btn bg-gold-gradient">Únete <i class="fa-duotone fa-arrow-right"></i></i></a>
                         </div>
                      </div>
                   </div>
                </div>
                </a>
-               <a href="register">
+               <a href="{{ route('register.aficionado')}}">
                   <div class="col-lg-4">
                   <div class="pricing-table amateur-plan" style="background-image: url(assets/img/bg-price-3.svg">
                      <div class="pricing-plan-title">
@@ -195,7 +195,7 @@
                      </div>
                      <div class="pricing-table-foot">
                         <div class="plan-select">
-                           <a href="register" class="filled-btn bg-blue">Únete <i class="fa-duotone fa-arrow-right"></i></a>
+                           <a href="{{ route('register.aficionado')}}" class="filled-btn bg-blue">Únete <i class="fa-duotone fa-arrow-right"></i></a>
                         </div>
                      </div>
                   </div>

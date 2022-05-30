@@ -12,11 +12,9 @@ class MailController extends Controller
     public function sendEmail()
     {
         $details=[
-            'title' => 'Activación Email',
-            'body' => 'Hola'
+            'title' => 'Código de verificación'
         ];
 
         Mail::to("julianospino5@gmail.com")->send(new TestMail($details));
-        return "Correo enviado";
     }
 }

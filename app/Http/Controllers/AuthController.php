@@ -18,6 +18,11 @@ class AuthController extends Controller
         return view('register');
     }
 
+    public function indexredirect()
+    {
+        return redirect('/');
+    }
+
     public function create()
     {
         //
@@ -34,7 +39,7 @@ class AuthController extends Controller
         $user->Contrasenna = md5($request->post('contrasenna'));
         $user->Boletin = $request->post('boletin');
         $user->Membresia = '1';
-        $user->Verificado = 'NO';
+        $user->Verificacion = random_int(100000, 999999);
         $user->save();
         return redirect()->route("auth.login")->with("success","Usuario creado con éxito!");
     }

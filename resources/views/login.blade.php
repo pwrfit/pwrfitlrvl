@@ -64,7 +64,7 @@
                               <div class="col-12 text-center">
                                  <p class="mb-0 mt-3">
                                     <small class="me-2">¿No tienes una cuenta?</small>
-                                    <a href="{{route('auth.register')}}" class="fw-bold" style="color: #000">Regístrate</a>
+                                    <a href="/#prices" class="fw-bold" style="color: #000">Regístrate</a>
                                  </p>
                               </div>
                            </div>
