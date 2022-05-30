@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 30, 2022 at 02:05 AM
+-- Generation Time: May 31, 2022 at 01:41 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -201,6 +201,8 @@ CREATE TABLE `usuarios` (
   `Correo` varchar(40) NOT NULL,
   `Boletin` varchar(2) NOT NULL,
   `Membresia` int(11) NOT NULL,
+  `Pago` varchar(20) NOT NULL,
+  `Valido` date DEFAULT NULL,
   `Verificacion` varchar(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -208,10 +210,10 @@ CREATE TABLE `usuarios` (
 -- Dumping data for table `usuarios`
 --
 
-INSERT INTO `usuarios` (`IdUsuario`, `Rol`, `Nombres`, `Apellidos`, `Direccion`, `Telefono`, `Celular`, `Contrasenna`, `Correo`, `Boletin`, `Membresia`, `Verificacion`) VALUES
-(1000001, 1, 'Juan', 'Holguin', NULL, NULL, NULL, '25d55ad283aa400af464c76d713c07ad', 'jpholguin77@misena.edu.co', 'NO', 4, ''),
-(1000002, 2, 'Julian', 'Ospino', NULL, NULL, NULL, '25d55ad283aa400af464c76d713c07ad', 'jaospino481@misena.edu.co', 'NO', 4, ''),
-(1000003, 3, 'Juan Andres', 'Gomez Cataño', 'CR 56 CL 94-12', '5431232', '3215631180', '81dc9bdb52d04dc20036dbd8313ed055', 'juang12@gmail.com', 'SI', 3, '');
+INSERT INTO `usuarios` (`IdUsuario`, `Rol`, `Nombres`, `Apellidos`, `Direccion`, `Telefono`, `Celular`, `Contrasenna`, `Correo`, `Boletin`, `Membresia`, `Pago`, `Valido`, `Verificacion`) VALUES
+(1000001, 1, 'Juan', 'Holguin', NULL, NULL, NULL, '25d55ad283aa400af464c76d713c07ad', 'jpholguin77@misena.edu.co', 'NO', 4, 'Completo', '2099-12-31', ''),
+(1000002, 2, 'Julian', 'Ospino', NULL, NULL, NULL, '25d55ad283aa400af464c76d713c07ad', 'jaospino481@misena.edu.co', 'NO', 4, 'Completo', '2099-12-31', ''),
+(1000003, 3, 'Juan Andres', 'Gomez Cataño', 'CR 56 CL 94-12', '5431232', '3215631180', '81dc9bdb52d04dc20036dbd8313ed055', 'juang12@gmail.com', 'SI', 3, 'Completo', '2099-12-31', '');
 
 -- --------------------------------------------------------
 
