@@ -566,7 +566,7 @@ margin-bottom: 10px; }
 .footer-link li:last-child {
 margin-bottom: 0; }
 .footer-cont li {
-margin-bottom: 10px; 
+margin-bottom: 10px;
 width: 500px;
 }
 .footer-cont i {
@@ -1227,10 +1227,7 @@ border-color: #2F55D4;
 -webkit-box-shadow: 0px 10px 30px 0px rgb(47 85 212 / 18%);
 box-shadow: 0px 10px 30px 0px rgb(47 85 212 / 18%);
 }
-.pricing-image {
-width: 270px;
-height: 270px;
-}
+
 .filled-btn.bg-burning-red{
 background-color: #F23849;
 -webkit-box-shadow: 0px 10px 30px 0px rgba(242, 56, 73, 0.36);
@@ -1701,7 +1698,7 @@ box-shadow: 0px 10px 60px 0px rgba(31, 45, 61, 0.3);
 }
 
 .dark .icon-boxes-wrapper.icon-boxes-grid .single-iconic-box.iconic-box-v2:before {
-	background-color: #1f2d3d;	
+	background-color: #1f2d3d;
 }
 
 
@@ -1819,15 +1816,15 @@ color: #fff;
 .dark .video-title a {
 	color: #fff;
 	}
-	
+
 .dark .channels-card {
     background: #11101D none repeat scroll 0 0;
     }
-	
+
 .dark .channels-title a {
     color: #fff;
     }
-	
+
 .dark .channels-card-image-btn button{
 		color: #fff;
 }
@@ -2114,7 +2111,7 @@ table.table th, td {
     .video-page {
     font-size: 11px;
     }
-   
+
     .video-card {
     background: #D3D3D3 none repeat scroll 0 0;
     border-radius: 2px;
@@ -2224,35 +2221,35 @@ table.table th, td {
     .channels-card-image-btn {
     margin: 3px 0 7px;
     }
-	
+
 	.channels-card-image-btn button {
 		background-color: transparent;
 		color: #000;
 		border: 1px solid #dc3545;
 	}
-	
+
 	.channels-card-image-btn button:hover{
 		background-color: #dc3545;
 		color: #fff;
 	}
-	
-	
+
+
 	/*-------------*/
 	.card-group {
 		padding: 10px 0px 0px 100px;
 		width: 98%;
 	}
-	
+
 .progress{
   height: 7px;
   }
-  
+
  .numtotal {
 	 padding-left: 98%;
  }
- 
+
  .bg-main {
-	 background-color: var(--main-color); 
+	 background-color: var(--main-color);
 }
 
 .users-table {
@@ -2264,12 +2261,12 @@ table.table th, td {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem; }
-  
+
   .table-responsive::-webkit-scrollbar {
   background-color: #F5F5F5;
   width: 8px;
   height: 8px; }
-  
+
   table {
     font-size: 0.875rem !important; }
 .table strong {

@@ -116,8 +116,8 @@
                   <div class="pricing-table basic-plan" style="background-image: url(assets/img/bg-price-1.svg">
                      <div class="pricing-plan-title">
                         <div class="pricing-table-basic-icon">
-                           <h5 class="plan-title">Deportista casual</h5>
-                           <img class="pricing-image" src="assets/img/basic_prev_ui1.png" draggable="false">
+                           <h5 class="plan-title">Casual</h5>
+                           <img class="pricing-image" src="{{ asset('img/basic_prev_ui1.png')}}" draggable="false">
                         </div>
                         <div class="pricing-plan-cost">
                            <span class="payment-currency">$</span>
@@ -146,8 +146,8 @@
                   <div class="pricing-table king-plan" style="background-image: url(assets/img/bg-price-2.svg">
                      <div class="pricing-plan-title">
                         <div class="pricing-table-icon">
-                           <h5 class="plan-title bg-gold-gradient">Leo Messi</h5>
-                           <img class="pricing-image" src="assets/img/king_prev_ui1.png" draggable="false">
+                           <h5 class="plan-title bg-gold-gradient">Comprometido</h5>
+                           <img class="pricing-image" src="{{ asset('img/king_prev_ui1.png')}}" draggable="false">
                         </div>
                         <div class="pricing-plan-cost">
                            <span class="payment-currency">$</span>
@@ -177,7 +177,7 @@
                      <div class="pricing-plan-title">
                         <div class="pricing-table-amateur-icon">
                            <h5 class="plan-title">Aficionado</h5>
-                           <img class="pricing-image" src="assets/img/amateur_prev_ui1.png" draggable="false">
+                           <img class="pricing-image" src="{{ asset('img/amateur_prev_ui1.png')}}" draggable="false">
                         </div>
                         <div class="pricing-plan-cost">
                            <span class="payment-currency">$</span>
@@ -213,11 +213,11 @@
                <div class="col-sm-6 col-lg-3 footer-item-logo">
                   <a href="index" class="logo-footer"><img src="assets/img/logo.png"></a>
                   <p>Desafío aceptado</p>
-                  <ul class="social-list">
+                  {{-- <ul class="social-list">
                      <li><a target="_blank" href=""><i class="fab fa-facebook"></i></i></a></li>
                      <li><a target="_blank" href=""><i class="fab fa-youtube"></i></a></li>
                      <li><a target="_blank" href=""><i class="fab fa-instagram"></i></a></li>
-                  </ul>
+                  </ul> --}}
                </div>
                <div class="col-sm-6 col-lg-3 footer-item">
                   <h3>Contáctanos</h3>

@@ -89,12 +89,12 @@
                </div>
             </div>
          </div>
-         <div class="container">
+         <div class="container" style="padding-top: 50px">
             <div class="row">
                <div class="col-md-4">
                   <div class="card border-0 text-center features feature-clean">
                      <div class="icons text-primary text-center mx-auto">
-                        <i><img src="assets/img/contact2.png" draggable="false"></i>
+                        <i><img src="{{ asset('img/undraw_handcrafts_smartphone.svg')}}" draggable="false" style="width: 50px"></i>
                      </div>
                      <div class="content mt-3">
                         <h5 class="fw-bold">Teléfono</h5>
@@ -106,19 +106,19 @@
                <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
                   <div class="card border-0 text-center features feature-clean">
                      <div class="icons text-primary text-center mx-auto">
-                        <i><img src="assets/img/contact1.png" draggable="false"></i>
+                        <i><img src="{{ asset('img/undraw_handcrafts_envelope.svg')}}" draggable="false" style="width: 110px; padding-top: 29px;"></i>
                      </div>
                      <div class="content mt-3">
                         <h5 class="fw-bold">Correo</h5>
                         <p class="text-muted">Contáctanos via correo eléctronico a través de la dirección</p>
-                        <a href="mailto:contact@example.com" class="text-primary">contact@example.com</a>
+                        <a href="mailto:pwrfitcontact@gmail.com" class="text-primary">pwrfitcontact@gmail.com</a>
                      </div>
                   </div>
                </div>
                <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
                   <div class="card border-0 text-center features feature-clean">
                      <div class="icons text-primary text-center mx-auto">
-                        <i><img src="assets/img/contact3.png" draggable="false"></i>
+                        <i><img src="{{ asset('img/undraw_handcrafts_location.svg')}}" draggable="false" width="100px"></i>
                      </div>
                      <div class="content mt-3">
                         <h5 class="fw-bold">Úbicación</h5>

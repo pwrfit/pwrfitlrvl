@@ -76,7 +76,7 @@
                                     <label class="form-label">Contraseña <span class="text-danger">*</span></label>
                                     <div class="form-icon input position-relative">
                                        <i class="fa-regular input fa-key-skeleton"></i>
-                                       <input type="password" name="contrasenna" class="form-control ps-5" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required="">
+                                       <input type="password" name="contrasenna" class="form-control ps-5" placeholder="••••••••" required="" minlength="8">
                                     </div>
                                  </div>
                               </div>
@@ -85,7 +85,7 @@
                                     <label class="form-label">Confirmar Contraseña <span class="text-danger">*</span></label>
                                     <div class="form-icon input position-relative">
                                        <i class="fa-regular input fa-key-skeleton"></i>
-                                       <input type="password" name="ccontrasenna" class="form-control ps-5" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" required="">
+                                       <input type="password" name="ccontrasenna" class="form-control ps-5" placeholder="••••••••" required="" minlength="8">
                                     </div>
                                  </div>
                               </div>
@@ -104,7 +104,7 @@
                               <div style="margin-left: 18px;" class="form-check col-md-10 d-flex justify-content-start">
                                  <input class="form-check-input" type="checkbox" value="acepto" id="terminos" required>
                                  <label class="form-check-label" for="terminos">
-                                 &nbsp;&nbsp;&nbsp;Acepto los <label data-toggle="modal" data-target="#myModal" class="text-primary" style="cursor: pointer;">términos y condiciones</label>
+                                 &nbsp;&nbsp;&nbsp;Acepto los <label data-toggle="modal" data-target="#myModal" class="text-primary" style="cursor: pointer;">términos y condiciones<span class="text-danger">*</span></label>
                                  </label>
                               </div>
                               <!-- The Modal -->
