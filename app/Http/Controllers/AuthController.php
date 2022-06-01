@@ -48,7 +48,7 @@ class AuthController extends Controller
             $user = new Auth();
             $user->IdUsuario = $request->post('documento');
             $user->Rol = '3';
-            $nombre = strtoupper($request->post('nombres')) . ' ' . strtoupper($request->post('apellidos'));
+            $nombre = strtoupper($request->post('nombrecompleto'));
             $user->NombreCompleto = $nombre;
             $user->Correo = $request->post('correo');
             $user->Contrasenna = md5($request->post('contrasenna'));
