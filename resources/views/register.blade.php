@@ -26,6 +26,9 @@
                 <div class="col-lg-5 col-md-8">
                     <div class="card shadow rounded border-0 mt-4">
                         <div class="card-body">
+                            @if ($errors->all())
+                            <div class='alert alert-danger text-center'>{{$errors}}</div>
+                            @endif
                             <h4 class="card-title text-center">Registro</h4>
                             <form class="login-form mt-4" method="post" action="{{ route('auth.store') }}"
                                 id="formulario">
@@ -48,7 +51,7 @@
                                                         <i class="fa-regular input fa-user"></i>
                                                         <input type="text" name="nombre" id="nombre"
                                                             class="form-control ps-5 formulario__input"
-                                                            placeholder="Juan Pablo Holguin Holguin" required>
+                                                            placeholder="Juan Pablo Holguin Holguin" required value="{{ old('nombre')}}">
                                                         <i
                                                             class="fa-solid formulario__validacion-estado fa-circle-xmark"></i>
                                                         <p class="formulario__input-error">El nombre solo puede llevar
@@ -68,7 +71,7 @@
                                                         <i class="fa-regular input fa-id-card"></i>
                                                         <input type="text" name="documento" id="documento"
                                                             class="form-control ps-5 formulario__input"
-                                                            placeholder="N° documento" name="documento" required>
+                                                            placeholder="N° documento" name="documento" required value="{{ old('documento')}}">
                                                         <i class="fa-solid formulario__validacion-estado fa-circle-xmark"></i>
                                                         <p class="formulario__input-error">El documento solo puede
                                                             contener numeros y el maximo son 20 dígitos.</p>
@@ -87,7 +90,7 @@
                                                         <i class="fa-regular input fa-envelope"></i>
                                                         <input type="email" name="correo" id="correo"
                                                             class="form-control ps-5 formulario__input" placeholder="email@mail.com"
-                                                            name="email" required="">
+                                                            name="email" required value="{{ old('correo')}}">
                                                         <i class="fa-solid formulario__validacion-estado fa-circle-xmark"></i>
                                                         <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
                                                     </div>
@@ -273,9 +276,11 @@
                                     <br>
                                     <div class="col-md-12">
                                         <div class="d-grid">
-                                            <input type="submit" name="registrar" class="btnf btn-primary"
-                                                value="Registrate">
+                                            <input type="submit" name="registrar" class="btnf btn-primary" value="Registrate">
                                         </div>
+                                        <style>
+
+                                        </style>
                                     </div>
                                     <div class="mx-auto">
                                         <p class="mb-0 mt-3"><small class="me-2">¿Ya tienes una cuenta?

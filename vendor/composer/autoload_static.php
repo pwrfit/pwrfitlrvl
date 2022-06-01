@@ -121,6 +121,7 @@ class ComposerStaticInit518416552093ddb58f242493a4cf4c5b
             'Laravel\\SerializableClosure\\' => 28,
             'Laravel\\Sanctum\\' => 16,
             'Laravel\\Sail\\' => 13,
+            'LaravelLang\\Lang\\' => 17,
         ),
         'I' => 
         array (
@@ -178,8 +179,8 @@ class ComposerStaticInit518416552093ddb58f242493a4cf4c5b
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Whoops\\' => 
         array (
@@ -335,8 +336,8 @@ class ComposerStaticInit518416552093ddb58f242493a4cf4c5b
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -401,6 +402,10 @@ class ComposerStaticInit518416552093ddb58f242493a4cf4c5b
         'Laravel\\Sail\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
+        ),
+        'LaravelLang\\Lang\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-lang/lang/src',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -507,7 +512,11 @@ class ComposerStaticInit518416552093ddb58f242493a4cf4c5b
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
+        'App\\Http\\Controllers\\BoletinController' => __DIR__ . '/../..' . '/app/Http/Controllers/BoletinController.php',
+        'App\\Http\\Controllers\\ContactController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\MailController' => __DIR__ . '/../..' . '/app/Http/Controllers/MailController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -517,6 +526,11 @@ class ComposerStaticInit518416552093ddb58f242493a4cf4c5b
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\AuthRequest' => __DIR__ . '/../..' . '/app/Http/Requests/AuthRequest.php',
+        'App\\Mail\\TestMail' => __DIR__ . '/../..' . '/app/Mail/TestMail.php',
+        'App\\Models\\Auth' => __DIR__ . '/../..' . '/app/Models/Auth.php',
+        'App\\Models\\Boletin' => __DIR__ . '/../..' . '/app/Models/Boletin.php',
+        'App\\Models\\Contact' => __DIR__ . '/../..' . '/app/Models/Contact.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -2561,6 +2575,18 @@ class ComposerStaticInit518416552093ddb58f242493a4cf4c5b
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'LaravelLang\\Lang\\Plugins\\Breeze' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/Breeze.php',
+        'LaravelLang\\Lang\\Plugins\\Cashier' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/Cashier.php',
+        'LaravelLang\\Lang\\Plugins\\Fortify' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/Fortify.php',
+        'LaravelLang\\Lang\\Plugins\\Jetstream' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/Jetstream.php',
+        'LaravelLang\\Lang\\Plugins\\Laravel' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/Laravel.php',
+        'LaravelLang\\Lang\\Plugins\\Lumen' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/Lumen.php',
+        'LaravelLang\\Lang\\Plugins\\Nova' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/Nova.php',
+        'LaravelLang\\Lang\\Plugins\\SparkPaddle' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/SparkPaddle.php',
+        'LaravelLang\\Lang\\Plugins\\SparkStripe' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/SparkStripe.php',
+        'LaravelLang\\Lang\\Plugins\\Ui' => __DIR__ . '/..' . '/laravel-lang/lang/src/Plugins/Ui.php',
+        'LaravelLang\\Lang\\Provider' => __DIR__ . '/..' . '/laravel-lang/lang/src/Provider.php',
+        'LaravelLang\\Lang\\ServiceProvider' => __DIR__ . '/..' . '/laravel-lang/lang/src/ServiceProvider.php',
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\PublishCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/PublishCommand.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',
