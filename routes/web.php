@@ -32,4 +32,4 @@ Route::get('/register/comprometido', [AuthController::class, 'indexregister'])->
 Route::get('/register/aficionado', [AuthController::class, 'indexregister'])->name('register.aficionado');
 Route::post('/register/registered', [AuthController::class, 'store'])->name('auth.store');
 Route::get('/register/verify', [AuthController::class, 'verify'])->name('auth.verify');
-Route::post('/register/verify/code', [AuthController::class, 'verifycode'])->name('auth.verifycode');
+Route::post('/register/verify/codigo', [AuthController::class, 'verifyemail'])->name('auth.verifyemail');

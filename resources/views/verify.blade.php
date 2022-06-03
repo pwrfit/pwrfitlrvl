@@ -19,20 +19,23 @@
       <p>
         @if ($mensaje = Session::get('success'))
             <div class='alert alert-success text-center'>{{$mensaje}}</div>
+        @elseif ($mensaje = Session::get('errorcode'))
+            <div class='alert alert-danger text-center'>{{$mensaje}}</div>
         @endif
       <br/> Ingresa el código enviado para verificar tu correo.
     </p>
-      <form action="{{ route('auth.verifycode')}}" method="post">
+      <form action="{{ route('auth.verifyemail')}}" method="post">
         @csrf
         <div class="code-container">
-          <input type="number" class="code" placeholder="0" min="0" max="9" required name="n1">
-          <input type="number" class="code" placeholder="0" min="0" max="9" required name="n2">
-          <input type="number" class="code" placeholder="0" min="0" max="9" required name="n3">
-          <input type="number" class="code" placeholder="0" min="0" max="9" required name="n4">
-          <input type="number" class="code" placeholder="0" min="0" max="9" required name="n5">
-          <input type="number" class="code" placeholder="0" min="0" max="9" required name="n6">
+            <input type="hidden" name="correo" value="{{Session::get('correo')}}">
+          <input type="number" class="code" placeholder="0" min="0" max="9" maxlength="1" required name="n1">
+          <input type="number" class="code" placeholder="0" min="0" max="9" maxlength="1" required name="n2">
+          <input type="number" class="code" placeholder="0" min="0" max="9" maxlength="1" required name="n3">
+          <input type="number" class="code" placeholder="0" min="0" max="9" maxlength="1" required name="n4">
+          <input type="number" class="code" placeholder="0" min="0" max="9" maxlength="1" required name="n5">
+          <input type="number" class="code" placeholder="0" min="0" max="9" maxlength="1" required name="n6">
         </div>
-        <button type="submit" class="btn btn-success">Verificar</button>
+        <input type="submit" class="btn btn-success" value="Verificar">
       </form>
     </div>
     <script src="{{ asset('js/verify.js')}}"></script>

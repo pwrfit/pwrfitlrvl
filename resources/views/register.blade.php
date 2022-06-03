@@ -27,7 +27,11 @@
                     <div class="card shadow rounded border-0 mt-4">
                         <div class="card-body">
                             @if ($errors->all())
-                            <div class='alert alert-danger text-center'>{{$errors}}</div>
+                            <div class='alert alert-danger text-center'>
+                                @foreach ($errors->all() as $error)
+                                    {{$error}}
+                                @endforeach
+                            </div>
                             @endif
                             <h4 class="card-title text-center">Registro</h4>
                             <form class="login-form mt-4" method="post" action="{{ route('auth.store') }}"

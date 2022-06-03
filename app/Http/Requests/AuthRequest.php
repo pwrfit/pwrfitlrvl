@@ -26,7 +26,7 @@ class AuthRequest extends FormRequest
         return [
             'documento' => ['required', 'unique:usuarios,IdUsuario'],
             'nombre' => 'required',
-            'correo' => 'required',
+            'correo' => ['required', 'unique:usuarios,Correo'],
             'contrasenna' => 'required',
             'ccontrasenna' => 'required',
             'boletin' => 'required',
