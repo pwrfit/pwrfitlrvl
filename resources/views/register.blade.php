@@ -281,6 +281,7 @@
                                     <div class="col-md-12">
                                         <div class="d-grid">
                                             <input type="submit" name="registrar" class="btnf btn-primary" value="Registrate">
+                                            <style>.btnf:active{border-color:#dc3545;box-shadow:0 0 0 .25rem rgba(253, 29, 13, 0.25);}</style>
                                         </div>
                                         <style>
 

@@ -33,3 +33,4 @@ Route::get('/register/aficionado', [AuthController::class, 'indexregister'])->na
 Route::post('/register/registered', [AuthController::class, 'store'])->name('auth.store');
 Route::get('/register/verify', [AuthController::class, 'verify'])->name('auth.verify');
 Route::post('/register/verify/codigo', [AuthController::class, 'verifyemail'])->name('auth.verifyemail');
+ROute::get('/register/verify/resend', [AuthController::class, 'resend'])->name('coderesend');

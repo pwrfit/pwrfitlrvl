@@ -38,7 +38,7 @@ class AuthController extends Controller
                 'codigo' => $codigo
             ];
             Mail::to("$correo")->send(new TestMail($detalles));
-            return redirect()->route("auth.verify")->with("success","Hemos enviado un código de verificación al correo $correo")->with("correo", "$correo");
+            return redirect()->route("auth.verify")->with("success","Hemos enviado un código de verificación al correo $correo")->with("correo", "$correo")->with("nombre","$nombre");
         }
 
     }
@@ -68,16 +68,34 @@ class AuthController extends Controller
     {
         $codigo = $request->post("n1") . $request->post("n2") . $request->post("n3") . $request->post("n4") . $request->post("n5") . $request->post("n6");
         $usuario = Auth::where('Verificacion', $codigo)->first();
+        $nombre = $request->post("nombre");
         $correo = $request->post("correo");
 
         if (!$usuario) {
-             return redirect()->route("auth.verify")->with("errorcode","El código que has ingresado es incorrecto")->with("correo","$correo");
+             return redirect()->route("auth.verify")->with("errorcode","El código que has ingresado es incorrecto")->with("correo","$correo")->with("nombre",$nombre);
          }
 
          DB::table('usuarios')
          ->where('Correo', $correo)
          ->update(['Verificacion' => 'COMPLETADO']);
-        return redirect()->route("auth.login")->with("success","Email verificado correctamente, ahora puedes iniciar sesion");
+        return redirect()->route("auth.login")->with("success","Email verificado correctamente, ahora puedes iniciar sesión.");
+    }
+
+    public function resend(Request $request)
+    {
+        $nombre = $request->get("nombre");
+        $codigo = random_int(100000, 999999);
+        $detalles=[
+            'title' => 'Código de verificación',
+            'nombre' => $nombre,
+            'codigo' => $codigo
+        ];
+        $correo = $request->get("correo");
+        DB::table('usuarios')
+                ->where('Correo', $correo)
+                ->update(['Verificacion' => $codigo]);
+        Mail::to("$correo")->send(new TestMail($detalles));
+        return redirect()->route("auth.verify")->with("success","Hemos vuelto a enviar un código de verificación al correo $correo")->with("correo", "$correo")->with("nombre","$nombre");
     }
 
     public function create()
